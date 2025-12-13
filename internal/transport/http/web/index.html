@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Image Processor</h1>
+        
+        <div class="upload-section">
+            <form class="upload-form" id="uploadForm">
+                <div>
+                    <label class="file-input-wrapper">
+                        <input type="file" id="fileInput" name="image" accept="image/jpeg,image/png,image/gif" required>
+                        <span class="file-input-label">Выбрать изображение</span>
+                    </label>
+                    <span class="file-name" id="fileName"></span>
+                </div>
+                <button type="submit" class="upload-btn" id="uploadBtn">Загрузить и обработать</button>
+            </form>
+            <div id="message"></div>
+        </div>
+
+        <div id="imagesContainer">
+            <div class="loading">Загрузка изображений...</div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
