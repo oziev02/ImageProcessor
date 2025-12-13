@@ -5,7 +5,9 @@ bin/
 *.dll
 *.so
 *.dylib
-imageprocessor
+
+# Application binary (only in root)
+/imageprocessor
 
 # Test binary, built with `go test -c`
 *.test
